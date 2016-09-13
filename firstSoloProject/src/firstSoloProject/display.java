@@ -14,7 +14,6 @@ public class display
 		//Board Setup
 		static String[][] boardO = new String[3][3];
 		
-		
 		public static void main(String[] args)
 			{
 				fillArray();
@@ -68,6 +67,7 @@ public class display
 		}
 		
 		public static void fillArray(){
+			
 			 for (int i = 0; i < boardO.length; i++){
 			        Arrays.fill(boardO[i], "1");
 			    }

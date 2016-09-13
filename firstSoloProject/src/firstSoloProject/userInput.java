@@ -1,10 +1,11 @@
 package firstSoloProject;
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 
 public class userInput
 	{
 
+//		display.boardO;
 			
 		public static void locationChoice(){
 			boolean Win = false;
