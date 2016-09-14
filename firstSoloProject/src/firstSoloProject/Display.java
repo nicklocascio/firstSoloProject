@@ -5,7 +5,7 @@ import java.util.Arrays;
 @SuppressWarnings("resource")
 
 
-public class display
+public class Display
 	{
 		//User Variables (X or Os)
 		static String userChoice;
@@ -18,9 +18,9 @@ public class display
 			{
 				fillArray();
 				Choice();
+				System.out.println(userChoice);
 				visualDisplay();
-
-				boardO[0][1] = userChoice;
+				UserInput.locationChoice();
 			}
 
 		//Setup Board, Contains array within, basically complete
@@ -51,8 +51,7 @@ public class display
 			String userXorO = userXorOinput.nextLine();
 			System.out.println("You have chosen " + userXorO);
 			
-			String userChoice = new String();
-			String computerGiven = new String();
+			 
 			
 			if(userXorO.equals("X")){
 				userChoice = "X";
@@ -65,7 +64,7 @@ public class display
 			
 			
 		}
-		
+		//Starts array Filled with Null / Spaces
 		public static void fillArray(){
 			
 			 for (int i = 0; i < boardO.length; i++){
@@ -75,7 +74,8 @@ public class display
 				
 			}
 			
-			
+
+				
 		}
 		
 
