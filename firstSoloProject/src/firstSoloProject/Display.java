@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 public class Display
 	{
+		static boolean win = true;
 		//User Variables (X or Os)
 		static String userChoice;
 		static String computerGiven;
@@ -16,11 +17,17 @@ public class Display
 		
 		public static void main(String[] args)
 			{
+				
 				fillArray();
 				Choice();
 				System.out.println(userChoice);
 				visualDisplay();
-				UserInput.locationChoice();
+				while(win = true){
+					UserInput.locationChoice();
+					ComputerInput.play();
+				}
+//				UserInput.locationChoice();
+//				ComputerInput.play();
 			}
 
 		//Setup Board, Contains array within, basically complete
@@ -55,9 +62,9 @@ public class Display
 			
 			if(userXorO.equals("X")){
 				userChoice = "X";
-				computerGiven = "Y";
+				computerGiven = "O";
 			}else{
-				userChoice = "Y";
+				userChoice = "O";
 				computerGiven = "X";
 			}
 			
@@ -68,7 +75,7 @@ public class Display
 		public static void fillArray(){
 			
 			 for (int i = 0; i < boardO.length; i++){
-			        Arrays.fill(boardO[i], "1");
+			        Arrays.fill(boardO[i], " ");
 			    }
 						
 				
