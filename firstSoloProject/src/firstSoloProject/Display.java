@@ -25,6 +25,8 @@ public class Display
 				while(win = true){
 					UserInput.locationChoice();
 					ComputerInput.play();
+					UserInput.winValue();
+					
 				}
 //				UserInput.locationChoice();
 //				ComputerInput.play();
