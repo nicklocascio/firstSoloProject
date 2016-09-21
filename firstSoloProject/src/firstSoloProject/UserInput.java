@@ -13,7 +13,7 @@ public class UserInput
 			
 				System.out.println("Where would you like to go?");
 				Scanner locationInput = new Scanner(System.in);
-				String location = locationInput.nextLine();
+				String location = locationInput.nextLine().toUpperCase();
 				
 				while(Win = true){
 				if(location.equals("A1") && location != Display.computerGiven){
@@ -83,7 +83,7 @@ public class UserInput
 					
 					){
 					System.out.println("You have won! Congratulations");
-					Display.win = true;
+					Display.win = false;
 					
 					
 				}
